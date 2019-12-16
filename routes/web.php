@@ -12,9 +12,9 @@
 */
 
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', "SiteController@index");
+
+Route::post('/', "SiteController@profile");
 
 #Route::get('/', 'SiteController');
 

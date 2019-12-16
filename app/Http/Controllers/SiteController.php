@@ -17,6 +17,10 @@ class SiteController extends Controller
         return view("index");
     }
 
+    public function profile(){
+        
+    }
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +29,7 @@ class SiteController extends Controller
     public function create()
     {
         //
-        return "Create Method";
+        return view("sitemap/create"); #"Create Method";
     }
 
     /**
