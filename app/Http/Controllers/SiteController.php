@@ -14,6 +14,7 @@ class SiteController extends Controller
     public function index()
     {
         //
+        return view("index");
     }
 
     /**
@@ -24,6 +25,7 @@ class SiteController extends Controller
     public function create()
     {
         //
+        return "Create Method";
     }
 
     /**
@@ -35,6 +37,7 @@ class SiteController extends Controller
     public function store(Request $request)
     {
         //
+        return "Store Method";
     }
 
     /**
@@ -46,6 +49,7 @@ class SiteController extends Controller
     public function show($id)
     {
         //
+        return "Show ".$id;
     }
 
     /**
@@ -57,6 +61,7 @@ class SiteController extends Controller
     public function edit($id)
     {
         //
+        return "Edit Method ". $id;
     }
 
     /**
@@ -69,6 +74,7 @@ class SiteController extends Controller
     public function update(Request $request, $id)
     {
         //
+        return "Update Method ".$id;
     }
 
     /**
@@ -80,5 +86,6 @@ class SiteController extends Controller
     public function destroy($id)
     {
         //
+        return "Destroy Method ".$id;
     }
 }
